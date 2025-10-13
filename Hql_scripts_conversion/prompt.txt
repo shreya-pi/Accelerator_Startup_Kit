@@ -1,0 +1,34 @@
+> You are an expert in SQL, HiveQL (HQL), and Snowflake SQL. I will give you a HiveQL script that was written for Apache Hive. Your task is to convert it into an equivalent Snowflake SQL script that preserves the logic and functionality but adapts it to Snowflake’s syntax, features, and best practices.
+>
+> **Requirements:**
+>
+> 1. **DDL conversion:**
+>
+>    * Convert `CREATE TABLE` statements to Snowflake syntax.
+>    * Remove Hive-specific storage directives (`ROW FORMAT`, `STORED AS`, `LOCATION`, etc.) and replace with Snowflake equivalents such as `FILE_FORMAT` or external stage references if needed.
+>    * Map Hive data types to Snowflake data types (e.g., `STRING` → `STRING`, `INT` → `INT`, `BIGINT` → `BIGINT`, `DOUBLE` → `FLOAT`, `BOOLEAN` → `BOOLEAN`, `ARRAY<...>` → `ARRAY`, `MAP<...>` → `OBJECT`).
+> 2. **DML conversion:**
+>
+>    * Replace `LOAD DATA INPATH` with `COPY INTO` from a Snowflake stage.
+>    * Assume data is staged in either an internal or external stage; specify the stage name and file format in the script.
+> 3. **Query conversion:**
+>
+>    * Convert any HiveQL functions to their Snowflake equivalents.
+>    * Adapt date/time functions (`from_unixtime`, `unix_timestamp`, etc.) to Snowflake syntax.
+>    * Replace Hive-specific constructs (`LATERAL VIEW`, `explode`, `map_keys`, etc.) with Snowflake’s alternatives (e.g., `FLATTEN`, `OBJECT_KEYS`).
+>    * Remove Hive execution hints or MapReduce settings.
+> 4. **File format handling:**
+>
+>    * Where Hive specifies delimiters or storage formats, use Snowflake `CREATE FILE FORMAT` and reference it in the `COPY INTO` commands.
+> 5. **Comments:**
+>
+>    * Include brief inline comments explaining any changes or assumptions made during conversion.
+> 6. **Output format:**
+>
+>    * Return only the final Snowflake SQL script inside a properly formatted SQL code block.
+>    * Do not include any extra explanation outside the code block unless explicitly asked.
+>
+> Here is the HQL script:
+
+
+

@@ -1,0 +1,813 @@
+2025-10-07 14:59:40,423 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-07 14:59:40,425 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-07 15:01:08,278 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-07 15:01:08,278 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-07 15:01:39,539 - INFO - 
+--- PHASE 1 COMPLETE: 3/3 files converted. ---
+2025-10-07 15:27:02,952 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-07 15:27:02,963 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:46:06,716 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:46:06,717 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:51:45,982 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:51:45,982 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:54:28,291 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:54:28,291 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:54:37,858 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:54:37,860 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:54:47,849 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:54:47,849 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:56:10,061 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:56:10,061 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:56:20,436 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:56:20,436 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:56:28,819 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:56:28,819 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:56:43,139 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:56:43,139 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:56:46,135 - INFO - Initializing...
+2025-10-08 14:56:46,135 - INFO - Loading embedding model (all-MiniLM-L6-v2)...
+2025-10-08 14:56:46,140 - INFO - Use pytorch device_name: cpu
+2025-10-08 14:56:46,141 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-08 14:56:50,591 - INFO - Connecting to Snowflake...
+2025-10-08 14:56:50,599 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:56:50,599 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:56:53,666 - INFO - Snowflake connection successful.
+2025-10-08 14:58:04,095 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:58:04,096 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:58:05,764 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:58:05,765 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:58:08,719 - INFO - Initializing...
+2025-10-08 14:58:08,719 - INFO - Loading embedding model (all-MiniLM-L6-v2)...
+2025-10-08 14:58:08,722 - INFO - Use pytorch device_name: cpu
+2025-10-08 14:58:08,722 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-08 14:58:12,941 - INFO - Connecting to Snowflake...
+2025-10-08 14:58:12,944 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:58:12,944 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:58:15,779 - INFO - Snowflake connection successful.
+2025-10-08 14:59:15,244 - ERROR - ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 574, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Users\shreya.naik\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\urllib3\connection.py", line 574, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Users\shreya.naik\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Python312\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+snowflake.connector.vendored.urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\network.py", line 1083, in _request_exec
+    raw_ret = session.request(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\vendored\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+snowflake.connector.vendored.requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\network.py", line 898, in _request_exec_wrapper
+    return_object = self._request_exec(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shreya.naik\Documents\Accelerator_tools\myenv\Lib\site-packages\snowflake\connector\network.py", line 1191, in _request_exec
+    raise RetryRequest(err)
+snowflake.connector.network.RetryRequest: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-10-08 14:59:39,211 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:59:39,212 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:59:47,500 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:59:47,500 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:59:50,555 - INFO - Initializing...
+2025-10-08 14:59:50,556 - INFO - Loading embedding model (all-MiniLM-L6-v2)...
+2025-10-08 14:59:50,558 - INFO - Use pytorch device_name: cpu
+2025-10-08 14:59:50,558 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-08 14:59:54,941 - INFO - Connecting to Snowflake...
+2025-10-08 14:59:54,945 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 14:59:54,945 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 14:59:58,107 - INFO - Snowflake connection successful.
+2025-10-08 14:59:58,111 - INFO - 
+Searching for schema matching 'CUSTOMERS'...
+2025-10-08 14:59:58,806 - INFO - 
+--- Most Relevant Schema Found ---
+2025-10-08 14:59:58,806 - INFO - ICEBERG_SCHEMA.CUSTOMERS
+- CUSTOMER_ID (number) - Primary_Key
+- NAME (text)
+- EMAIL (text)
+- PHONE (text)
+- ADDRESS (text)
+- LOAD_DATE (text)
+2025-10-08 14:59:58,806 - INFO - --------------------------------
+
+2025-10-08 14:59:58,806 - INFO - Sending request to Snowflake Cortex to describe table...
+2025-10-08 14:59:58,806 - INFO - 
+Executing prompt on Cortex with model 'snowflake-llama-3.3-70b'...
+2025-10-08 15:00:19,256 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:00:19,257 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:00:21,614 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:00:21,614 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:00:30,735 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:00:30,737 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:20:41,707 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:20:41,709 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:20:47,299 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:20:47,300 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:20:50,817 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:20:50,819 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:56:13,101 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:56:13,109 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:56:24,629 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:56:24,629 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:56:32,177 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 15:56:32,177 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 15:57:02,716 - INFO - Differences for dbo.vw_customer_summary saved to a CSV file.
+2025-10-08 15:57:04,500 - INFO - Differences for dbo.vw_staff_performance saved to a CSV file.
+2025-10-08 15:57:04,500 - INFO - HTML report generated: Dq_analysis/View_Reports/All_Views_comparison_report.html
+2025-10-08 15:58:07,363 - INFO - Differences for dbo.car_dekho saved to a CSV file.
+2025-10-08 15:58:39,178 - INFO - Differences for dbo.car_v3 saved to a CSV file.
+2025-10-08 15:58:40,644 - INFO - Differences for dbo.category saved to a CSV file.
+2025-10-08 15:58:42,807 - INFO - Differences for dbo.city saved to a CSV file.
+2025-10-08 15:58:50,844 - INFO - Differences for dbo.country saved to a CSV file.
+2025-10-08 15:58:55,413 - INFO - Differences for dbo.inventory saved to a CSV file.
+2025-10-08 15:58:56,588 - INFO - Differences for dbo.language saved to a CSV file.
+2025-10-08 15:59:09,628 - INFO - Differences for dbo.payment saved to a CSV file.
+2025-10-08 15:59:21,534 - INFO - Differences for dbo.rental saved to a CSV file.
+2025-10-08 15:59:24,906 - INFO - Differences for dbo.staff saved to a CSV file.
+2025-10-08 15:59:24,909 - INFO - HTML report generated: Dq_analysis/Table_Reports/All_Tables_comparison_report.html
+2025-10-08 16:02:32,253 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:02:32,266 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:02:56,189 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:02:56,189 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:04:02,977 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:04:02,977 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:04:32,455 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:04:32,455 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:04:38,692 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:04:38,692 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:04:51,328 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:04:51,330 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:05:28,535 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:05:28,537 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:05:31,142 - INFO - Initializing...
+2025-10-08 16:05:31,142 - INFO - Loading embedding model (all-MiniLM-L6-v2)...
+2025-10-08 16:05:31,152 - INFO - Use pytorch device_name: cpu
+2025-10-08 16:05:31,152 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-08 16:05:44,618 - INFO - Connecting to Snowflake...
+2025-10-08 16:05:44,623 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-08 16:05:44,623 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-08 16:05:49,048 - INFO - Snowflake connection successful.
+2025-10-08 16:05:49,056 - INFO - 
+Searching for schema matching 'CUSTOMERS'...
+2025-10-08 16:05:50,041 - INFO - 
+--- Most Relevant Schema Found ---
+2025-10-08 16:05:50,041 - INFO - ICEBERG_SCHEMA.CUSTOMERS
+- CUSTOMER_ID (number) - Primary_Key
+- NAME (text)
+- EMAIL (text)
+- PHONE (text)
+- ADDRESS (text)
+- LOAD_DATE (text)
+2025-10-08 16:05:50,041 - INFO - --------------------------------
+
+2025-10-08 16:05:50,041 - INFO - Sending request to Snowflake Cortex to describe table...
+2025-10-08 16:05:50,041 - INFO - 
+Executing prompt on Cortex with model 'snowflake-llama-3.3-70b'...
+2025-10-09 11:43:27,597 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 11:43:27,600 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 11:43:50,660 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 11:43:50,661 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 11:54:22,254 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 11:54:22,255 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 11:56:46,233 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 11:56:46,235 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 12:50:35,988 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 12:50:35,990 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 12:50:35,994 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 12:50:35,994 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 13:00:31,405 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 13:00:31,406 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 13:00:31,411 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-09 13:00:31,413 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-09 13:00:45,796 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/my_db/products.csv'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '46355'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'de9dd900-a4e1-11f0-93b3-105fad155e81'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-10-09 13:00:45,797 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/my_db/orders.csv'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '50641'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'de9e0003-a4e1-11f0-9634-105fad155e81'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+2025-10-09 13:00:48,544 - INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 09 Oct 2025 07:30:50 GMT'
+    'ETag': '"0x8DE0705C558B248"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '2bb81134-201e-00e7-76ee-380a80000000'
+    'x-ms-client-request-id': 'de9dd900-a4e1-11f0-93b3-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 09 Oct 2025 07:30:49 GMT'
+2025-10-09 13:00:48,573 - INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 09 Oct 2025 07:30:50 GMT'
+    'ETag': '"0x8DE0705C55D54E8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '56b6e97c-801e-0057-70ee-384b49000000'
+    'x-ms-client-request-id': 'de9e0003-a4e1-11f0-9634-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 09 Oct 2025 07:30:49 GMT'
+2025-10-09 17:09:03,788 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8e81005d-a504-11f0-ae82-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-09 17:09:06,846 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'e6138381-c01e-0046-4711-39d1fd000000'
+    'x-ms-client-request-id': '8e81005d-a504-11f0-ae82-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'Date': 'Thu, 09 Oct 2025 11:39:07 GMT'
+2025-10-09 17:09:15,922 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '95be87a2-a504-11f0-8b54-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-09 17:09:18,818 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '356efcf9-401e-0048-0e11-39f84d000000'
+    'x-ms-client-request-id': '95be87a2-a504-11f0-8b54-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'Date': 'Thu, 09 Oct 2025 11:39:19 GMT'
+2025-10-09 17:09:18,837 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/GetCustomerRentals.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '977b4a8a-a504-11f0-946a-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-09 17:09:19,220 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '1155'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A28E8918"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '356eff22-401e-0048-0611-39f84d000000'
+    'x-ms-client-request-id': '977b4a8a-a504-11f0-946a-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Thu, 09 Oct 2025 11:39:19 GMT'
+2025-10-09 17:09:34,583 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': 'a0ddf209-a504-11f0-a890-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-09 17:09:37,860 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': 'aa16af55-101e-0037-6111-3937d6000000'
+    'x-ms-client-request-id': 'a0ddf209-a504-11f0-a890-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'Date': 'Thu, 09 Oct 2025 11:39:38 GMT'
+2025-10-10 13:54:26,544 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 13:54:26,546 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-10 13:54:39,243 - INFO -    \u2192 New procedures inserted: 0
+2025-10-10 13:54:39,243 - INFO -    \u2192 Existing procedures updated: 5
+2025-10-10 13:54:39,843 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 13:54:39,843 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-10 13:59:22,396 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 13:59:22,396 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-10 14:14:08,376 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 14:14:08,396 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-10 14:14:52,515 - INFO - Ensured output directory exists: ./extracted_procedures
+2025-10-10 14:14:53,616 - INFO - Wrote GetInactiveCustomers \u2192 ./extracted_procedures\GetInactiveCustomers.sql
+2025-10-10 14:14:53,616 - INFO - Wrote GetCustomerRentals \u2192 ./extracted_procedures\GetCustomerRentals.sql
+2025-10-10 14:14:53,637 - INFO - Wrote GetTopRentedMovies \u2192 ./extracted_procedures\GetTopRentedMovies.sql
+2025-10-10 14:15:50,731 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '862e0a10-a5b5-11f0-a243-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:54,450 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c53616-501e-0044-01c2-396f45000000'
+    'x-ms-client-request-id': '862e0a10-a5b5-11f0-a243-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:53 GMT'
+2025-10-10 14:15:54,466 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data?restype=REDACTED&comp=REDACTED&prefix=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8867fce8-a5b5-11f0-b394-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:55,249 - INFO - Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/xml'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c537ae-501e-0044-6cc2-396f45000000'
+    'x-ms-client-request-id': '8867fce8-a5b5-11f0-b394-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:54 GMT'
+2025-10-10 14:15:55,263 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/GetCustomerRentals.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '88e19d8c-a5b5-11f0-b06a-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:55,662 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '1155'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A28E8918"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c539a7-501e-0044-3bc2-396f45000000'
+    'x-ms-client-request-id': '88e19d8c-a5b5-11f0-b06a-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:55 GMT'
+2025-10-10 14:15:55,665 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/GetInactiveCustomers.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '891eebdb-a5b5-11f0-959a-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:56,172 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '1205'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A2B3F084"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c53a96-501e-0044-08c2-396f45000000'
+    'x-ms-client-request-id': '891eebdb-a5b5-11f0-959a-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:55 GMT'
+2025-10-10 14:15:56,189 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/GetStoreRevenue.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '896ed747-a5b5-11f0-b453-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:56,589 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '1195'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:50 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A2D3ABA8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c53bea-501e-0044-2dc2-396f45000000'
+    'x-ms-client-request-id': '896ed747-a5b5-11f0-b453-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:56 GMT'
+2025-10-10 14:15:56,595 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/sproc1.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '89ac463a-a5b5-11f0-aa51-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:56,997 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '155948'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:51 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A3479CCC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c53c87-501e-0044-39c2-396f45000000'
+    'x-ms-client-request-id': '89ac463a-a5b5-11f0-aa51-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:56 GMT'
+2025-10-10 14:15:57,715 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/sproc2.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8a57c35c-a5b5-11f0-a70b-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:58,120 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '15546'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:51 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A368DC84"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c53ef9-501e-0044-6ac2-396f45000000'
+    'x-ms-client-request-id': '8a57c35c-a5b5-11f0-a70b-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:57 GMT'
+2025-10-10 14:15:58,133 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/sproc3.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8a97982b-a5b5-11f0-8d2c-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:58,530 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '11700'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:52 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A3884398"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c53ff2-501e-0044-48c2-396f45000000'
+    'x-ms-client-request-id': '8a97982b-a5b5-11f0-8d2c-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:57 GMT'
+2025-10-10 14:15:58,530 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/sproc4.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8ad414aa-a5b5-11f0-a427-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:58,942 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '40718'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:52 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A3A883F8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c540af-501e-0044-6ec2-396f45000000'
+    'x-ms-client-request-id': '8ad414aa-a5b5-11f0-a427-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:58 GMT'
+2025-10-10 14:15:58,947 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/sproc5.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8b13ab63-a5b5-11f0-bc2c-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:59,355 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '77024'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:52 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A3CBDDAC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c54159-501e-0044-04c2-396f45000000'
+    'x-ms-client-request-id': '8b13ab63-a5b5-11f0-bc2c-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:58 GMT'
+2025-10-10 14:15:59,364 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/sproc6.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8b535ef5-a5b5-11f0-8aca-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:15:59,734 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '170160'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:52 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A3F2D304"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c5425c-501e-0044-72c2-396f45000000'
+    'x-ms-client-request-id': '8b535ef5-a5b5-11f0-8aca-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:45:59 GMT'
+2025-10-10 14:16:00,404 - INFO - Request URL: 'https://tulapidemo.blob.core.windows.net/data/streamlit_test/jsmith/converted_procedures/usp_refresh_comparison_scripts.sql'
+Request method: 'GET'
+Request headers:
+    'x-ms-range': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.26.0 Python/3.12.8 (Windows-11-10.0.26100-SP0)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '8bf1ae8b-a5b5-11f0-8f5e-105fad155e81'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-10 14:16:00,785 - INFO - Response status: 206
+Response headers:
+    'Content-Length': '7767'
+    'Content-Type': 'application/octet-stream'
+    'Content-Range': 'REDACTED'
+    'Last-Modified': 'Fri, 27 Jun 2025 12:17:53 GMT'
+    'Accept-Ranges': 'REDACTED'
+    'ETag': '"0x8DDB574A4134448"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '17c543fc-501e-0044-61c2-396f45000000'
+    'x-ms-client-request-id': '8bf1ae8b-a5b5-11f0-8f5e-105fad155e81'
+    'x-ms-version': 'REDACTED'
+    'x-ms-resource-type': 'REDACTED'
+    'x-ms-creation-time': 'REDACTED'
+    'x-ms-blob-content-md5': 'REDACTED'
+    'x-ms-lease-status': 'REDACTED'
+    'x-ms-lease-state': 'REDACTED'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-server-encrypted': 'REDACTED'
+    'x-ms-owner': 'REDACTED'
+    'x-ms-group': 'REDACTED'
+    'x-ms-permissions': 'REDACTED'
+    'x-ms-acl': 'REDACTED'
+    'Date': 'Fri, 10 Oct 2025 08:46:00 GMT'
+2025-10-10 14:20:47,217 - INFO - Processed: GetCustomerRentals.sql \u2192 processed_GetCustomerRentals.sql
+2025-10-10 14:20:47,217 - INFO - Processed: GetInactiveCustomers.sql \u2192 processed_GetInactiveCustomers.sql
+2025-10-10 14:20:47,221 - INFO - Processed: GetStoreRevenue.sql \u2192 processed_GetStoreRevenue.sql
+2025-10-10 14:20:47,225 - INFO - Processed: sproc1.sql \u2192 processed_sproc1.sql
+2025-10-10 14:20:47,225 - INFO - Processed: sproc2.sql \u2192 processed_sproc2.sql
+2025-10-10 14:20:47,231 - INFO - Processed: sproc3.sql \u2192 processed_sproc3.sql
+2025-10-10 14:20:47,231 - INFO - Processed: sproc4.sql \u2192 processed_sproc4.sql
+2025-10-10 14:20:47,239 - INFO - Processed: sproc5.sql \u2192 processed_sproc5.sql
+2025-10-10 14:20:47,248 - INFO - Processed: sproc6.sql \u2192 processed_sproc6.sql
+2025-10-10 14:20:47,249 - INFO - Processed: usp_refresh_comparison_scripts.sql \u2192 processed_usp_refresh_comparison_scripts.sql
+2025-10-10 14:20:47,251 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 14:20:47,255 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-10 14:21:03,203 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 14:21:03,203 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-10 14:43:36,655 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-10 14:43:36,655 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 14:31:37,934 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-13 14:31:37,934 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 14:32:23,046 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-13 14:32:23,046 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 14:32:33,790 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-13 14:32:33,790 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 15:01:57,272 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-13 15:01:57,274 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 15:02:12,831 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-13 15:02:12,831 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 15:07:26,927 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-13 15:07:26,930 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-13 15:07:57,882 - INFO - 
+--- PHASE 1 COMPLETE: 3/3 files converted. ---

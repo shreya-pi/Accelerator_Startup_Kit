@@ -1,0 +1,5 @@
+customer_id,inventory_id,last_update,rental_date,rental_id,return_date,staff_id,_merge
+3,25,,2025-07-01 15:40:19.700000,16050,,2,right_only
+3,25,,2025-07-01 16:31:35.960000,16051,,2,right_only
+3,25,,2025-07-01 16:32:08.240000,16052,,2,right_only
+3,25,,2025-07-01 16:38:54.756666,16053,,2,right_only

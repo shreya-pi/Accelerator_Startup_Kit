@@ -1,0 +1,5 @@
+first_name,last_name,staff_id,total_revenue,total_transactions,_merge
+Jon,Stephens,2,33969.43,8004,right_only
+Jon,Stephens,2,135877.72,32016,left_only
+Mike,Hillyer,1,33538.0,8073,right_only
+Mike,Hillyer,1,134152.0,32292,left_only
