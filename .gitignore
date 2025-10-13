@@ -1,6 +1,7 @@
 config.py
 converted_procedures/
 processed_procedures/
+extracted_procedures/
 Hql_scripts_conversion/__pycache__/
 __pycache__/
 myenv/
