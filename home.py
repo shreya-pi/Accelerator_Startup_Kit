@@ -151,10 +151,13 @@ def render_app_page(page_key, title):
     # st.button("⬅️ Back to Home", on_click=navigate_to, args=('home',))
     # st.write("---")
 
-    if st.session_state.app_config and page_key != 'sp_migration':
+    if st.session_state.app_config and page_key != 'sp_migration' and page_key != 'teradata_migration':
         # Pass the config to the app's run method
         st.session_state.apps[page_key].run(config=st.session_state.app_config)
     elif st.session_state.app_config and page_key == 'sp_migration':
+        # Pass the config to the app's run method
+        st.session_state.apps[page_key].run()
+    elif st.session_state.app_config and page_key == 'teradata_migration':
         # Pass the config to the app's run method
         st.session_state.apps[page_key].run()
     else:
