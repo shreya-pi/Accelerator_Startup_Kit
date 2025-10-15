@@ -249,7 +249,7 @@ class HqlScriptsConverterApp:
             st.header("Step 1: Run Batch Conversion")
             st.markdown(f"This will fetch all {CONFIG['find_str']} scripts from the source repo, convert them using Cortex, and save them locally. You can then review them in the 'Editor & Publisher' tab.")
         
-            start_button = st.button("🚀 Start Full Conversion Workflow", type="primary", width='stretch')
+            start_button = st.button("🚀 Start Full Conversion Workflow", type="primary", use_container_width=True)
         
             status_placeholder = st.empty()
             progress_placeholder = st.empty()
