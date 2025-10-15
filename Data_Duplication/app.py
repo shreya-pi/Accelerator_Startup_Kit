@@ -30,9 +30,9 @@ class DataDuplicatesApp:
             st.error(f"Failed to connect to Snowflake: {e}")
             return None
 
-    def get_describer(self):
+    def get_describer(self, config):
         try:
-            self.describer = SnowflakeSchemaDescriber()
+            self.describer = SnowflakeSchemaDescriber(config)
             return self.describer
         except Exception as e:
             st.error(f"Failed to initialize the Column Describer: {e}")
@@ -144,11 +144,11 @@ class DataDuplicatesApp:
                 else:
                     st.error("Failed to execute the query. Check the error message above.")
 
-    def describe_table_columns(self, selected_table):
+    def describe_table_columns(self, selected_table, config):
         st.subheader(f"AI-Generated Column Descriptions for `{selected_table}`")
         with st.spinner(f"Generating description for {selected_table}... This may take a moment."):
             try:
-                describer = self.get_describer()
+                describer = self.get_describer(config)
                 schema_blob = self.get_schema_text()
                 if describer and schema_blob:
                     filtered_schema = describer.filter_schema(selected_table, schema_blob)
@@ -266,7 +266,7 @@ class DataDuplicatesApp:
         elif action == "2. View Cleaned Data":
             self.view_cleaned_data(selected_table, database_name, schema_name)
         elif action == "3. Describe Table Columns":
-            self.describe_table_columns(selected_table)
+            self.describe_table_columns(selected_table,config)
 
 
 

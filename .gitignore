@@ -7,3 +7,4 @@ __pycache__/
 myenv/
 .env
 config_files/
+config_files.zip

@@ -8,7 +8,7 @@ from snowflake.connector.errors import ProgrammingError
 from sklearn.metrics.pairwise import cosine_similarity
 # from dotenv import load_dotenv
 from Data_Duplication.log import log_info, log_error
-from config import SNOWFLAKE_CONFIG
+# from config import SNOWFLAKE_CONFIG
 
 # --- PROMPT TEMPLATE FOR SNOWFLAKE CORTEX ---
 # This is the prompt you provided, ready to be filled.
@@ -33,7 +33,8 @@ class SnowflakeSchemaDescriber:
     A class to filter a relevant table schema from a text block and use
     Snowflake Cortex to generate a description of its columns.
     """
-    def __init__(self):
+    def __init__(self, config):
+        self.SNOWFLAKE_CONFIG = config['SNOWFLAKE_CONFIG']
         """
         Initializes the embedding model and the Snowflake connection.
         """
@@ -48,7 +49,7 @@ class SnowflakeSchemaDescriber:
         # 2. Establish connection to Snowflake
         try:
             log_info("Connecting to Snowflake...")
-            sf_cfg = SNOWFLAKE_CONFIG
+            sf_cfg = self.SNOWFLAKE_CONFIG
             self.conn = snowflake.connector.connect(
                 user=sf_cfg['user'],
                 password=sf_cfg['password'],
