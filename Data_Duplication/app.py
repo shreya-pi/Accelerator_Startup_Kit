@@ -8,7 +8,7 @@ from Data_Duplication.col_desc import SnowflakeSchemaDescriber
 from Data_Duplication.dmf_definitions import get_dmf_functions
 
 
-class DataDuplicatetionApp:
+class DataDuplicatesApp:
     def __init__(self):
         self.conn = None
         self.describer = None

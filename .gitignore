@@ -6,3 +6,4 @@ Hql_scripts_conversion/__pycache__/
 __pycache__/
 myenv/
 .env
+config_files/

@@ -811,3 +811,7 @@ Response headers:
 2025-10-13 15:07:26,930 - INFO - Connecting to GLOBAL Snowflake domain
 2025-10-13 15:07:57,882 - INFO - 
 --- PHASE 1 COMPLETE: 3/3 files converted. ---
+2025-10-15 11:31:12,101 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-15 11:31:12,103 - INFO - Connecting to GLOBAL Snowflake domain
+2025-10-15 12:01:35,058 - INFO - Snowflake Connector for Python Version: 3.17.4, Python Version: 3.12.8, Platform: Windows-11-10.0.26100-SP0
+2025-10-15 12:01:35,060 - INFO - Connecting to GLOBAL Snowflake domain

@@ -3,7 +3,7 @@
 import streamlit as st
 from Json_Parser.app import JsonToSnowflakeApp
 from Hql_scripts_conversion.app import HqlScriptsConverterApp
-from Data_Duplication.app import DataDuplicatetionApp
+from Data_Duplication.app import DataDuplicatesApp
 from Data_Quality.app import DataQualityApp
 from Teradata_Migration.app import TeradataMigrationApp
 from SP_Migration.app import SPMigrationApp
@@ -22,7 +22,7 @@ if 'apps' not in st.session_state:
     st.session_state.apps = {
         'json_parser': JsonToSnowflakeApp(),
         'hql_converter': HqlScriptsConverterApp(),
-        'data_duplicate': DataDuplicatetionApp(),
+        'data_duplicate': DataDuplicatesApp(),
         'data_quality': DataQualityApp(),
         'teradata_migration': TeradataMigrationApp(),
         'sp_migration': SPMigrationApp()
@@ -35,8 +35,31 @@ if 'app_config' not in st.session_state:
     st.session_state.app_config = None
 
 
+# --- Navigation Logic ---
+
+def navigate_to(page_name):
+    """
+    Changes the page in session state.
+    Resets the state of the target app component for a fresh UI.
+    """
+    current_page = st.session_state.page
+    
+    # Only reset if navigating to a *different* sub-app page
+    if page_name != 'home' and page_name != current_page:
+        target_app = st.session_state.apps.get(page_name)
+        # Check if the app has a 'reset_state' method before calling
+        if target_app and hasattr(target_app, 'reset_state') and callable(getattr(target_app, 'reset_state')):
+            target_app.reset_state()
+    
+    st.session_state.page = page_name
+
 # --- Sidebar for Global Configuration ---
 with st.sidebar:
+    if st.session_state.page != 'home':
+        st.button("⬅️ Back to Home", on_click=navigate_to, args=('home',), use_container_width=True)
+        st.markdown("---")
+
+
     st.title("⚙️ Configuration Details")
     st.markdown("Upload your `config.py` file to provide database connection details for required application.")
 
@@ -76,23 +99,6 @@ with st.sidebar:
         st.warning("Awaiting configuration file upload.")
 
 
-# --- Navigation Logic ---
-
-def navigate_to(page_name):
-    """
-    Changes the page in session state.
-    Resets the state of the target app component for a fresh UI.
-    """
-    current_page = st.session_state.page
-    
-    # Only reset if navigating to a *different* sub-app page
-    if page_name != 'home' and page_name != current_page:
-        target_app = st.session_state.apps.get(page_name)
-        # Check if the app has a 'reset_state' method before calling
-        if target_app and hasattr(target_app, 'reset_state') and callable(getattr(target_app, 'reset_state')):
-            target_app.reset_state()
-    
-    st.session_state.page = page_name
 
 # --- Page Rendering Functions ---
 
@@ -142,8 +148,8 @@ def render_home_page():
 def render_app_page(page_key, title):
     """A generic function to render any app page."""
     st.title(title)
-    st.button("⬅️ Back to Home", on_click=navigate_to, args=('home',))
-    st.write("---")
+    # st.button("⬅️ Back to Home", on_click=navigate_to, args=('home',))
+    # st.write("---")
 
     if st.session_state.app_config:
         # Pass the config to the app's run method
