@@ -24,9 +24,9 @@ class ProcessProcsPage:
         self.config = config
         
         # Define directories using config for flexibility, with sensible defaults
-        self.converted_dir = Path(config.get("SNOWCONVERT_OUTPUT_DIR", "./converted_procedures")) / "Output" / "SnowConvert"
-        self.extracted_dir = Path(config.get("SQL_OUTPUT_DIR", "./extracted_procedures"))
-        self.processed_dir = Path("./processed_procedures")
+        self.converted_dir = Path(config.get("SNOWCONVERT_OUTPUT_DIR", "./SP_Migration/converted_procedures")) / "Output" / "SnowConvert"
+        self.extracted_dir = Path(config.get("SQL_OUTPUT_DIR", "./SP_Migration/extracted_procedures"))
+        self.processed_dir = Path("./SP_Migration/processed_procedures")
 
                 # Initialize session state for the editable content
         if "editable_file_path" not in st.session_state:

@@ -40,8 +40,8 @@ class SnowConvertRunner:
         Initializes the runner.
         :param ui_logger: A callback function (e.g., st.write) to send logs to the UI.
         """
-        self.input_path = "./extracted_procedures"
-        self.output_path = "./converted_procedures"
+        self.input_path = "./SP_Migration/extracted_procedures"
+        self.output_path = "./SP_Migration/converted_procedures"
         os.makedirs(self.output_path, exist_ok=True)
         os.makedirs("./logs", exist_ok=True)
         self.log_file = "./logs/assessment.txt"

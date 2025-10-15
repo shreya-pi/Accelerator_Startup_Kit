@@ -26,7 +26,7 @@ class SelectProcedures:
         
         self.snowflake_config = config["SNOWFLAKE_CONFIG"]
         # self.output_dir = config["SQL_OUTPUT_DIR"]
-        output_dir = "./extracted_procedures"
+        output_dir = "./SP_Migration/extracted_procedures"
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
 

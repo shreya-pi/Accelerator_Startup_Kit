@@ -104,8 +104,8 @@ class UnitTestPage:
                 successful_proc_names = set(deployed_procs_df['PROCEDURE_NAME'])
                 
                 # 2. Prepare directories
-                source_dir = "./processed_procedures"
-                target_dir = "./deployed_procedures"
+                source_dir = "./SP_Migration/processed_procedures"
+                target_dir = "./SP_Migration/deployed_procedures"
                 github_url = "https://github.com/shreya-pi/SP_Deployed_Procs_Test.git"
                 # if not os.path.exists(parent_target_dir):
                 #     os.makedirs(parent_target_dir)
@@ -181,7 +181,7 @@ class UnitTestPage:
                 # Pass the config to the test module
                 py_test.CONFIG = self.config
 
-                processed_dir = "./processed_procedures"
+                processed_dir = "./SP_Migration/processed_procedures"
                 if not os.path.exists(processed_dir):
                     st.error(f"Directory '{processed_dir}' not found. Please run Step 5 first."); st.stop()
                 

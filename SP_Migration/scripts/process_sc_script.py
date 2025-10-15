@@ -9,8 +9,8 @@ class ScScriptProcessor:
         self.source_schema = source_schema
         self.target_schema = target_schema
 
-        input_folder = "./converted_procedures/Output/SnowConvert/"
-        output_folder = "./processed_procedures"
+        input_folder = "./SP_Migration/converted_procedures/Output/SnowConvert/"
+        output_folder = "./SP_Migration/processed_procedures"
 
         self.input_folder = Path(input_folder)
         self.output_folder = Path(output_folder)

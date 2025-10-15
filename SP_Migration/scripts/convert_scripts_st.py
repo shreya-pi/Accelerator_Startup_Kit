@@ -110,7 +110,7 @@ class ConvertPage:
                         with st.spinner("Publishing files to Git repository..."):
                             # Call your predefined function
                             github_url = "https://github.com/shreya-pi/SP_Converted_Procs_Test.git"
-                            converted_procs_path = './converted_procedures/Output/SnowConvert'
+                            converted_procs_path = './SP_Migration/converted_procedures/Output/SnowConvert'
                             publisher = GitPublisher(converted_procs_path, github_url)
                             publisher.git_publish()
                         st.success(f"✅ Git Publish Successful")
@@ -144,7 +144,7 @@ class ConvertPage:
 
     def _download_from_azure(self):
         """Downloads all files from the user's Azure path to the local output directory."""
-        output_dir = "./converted_procedures/Output/SnowConvert"
+        output_dir = "./SP_Migration/converted_procedures/Output/SnowConvert"
         os.makedirs(output_dir, exist_ok=True)
         container_client = self.blob_service_client.get_container_client(self.container_name)
         blobs_to_download = container_client.list_blobs(name_starts_with=self.blob_prefix)
@@ -161,7 +161,7 @@ class ConvertPage:
 
     def _upload_to_azure(self):
         """Uploads files from the local output directory to the user's Azure path."""
-        local_dir = "./converted_procedures/Output/SnowConvert"
+        local_dir = "./SP_Migration/converted_procedures/Output/SnowConvert"
         container_client = self.blob_service_client.get_container_client(self.container_name)
 
         count = 0

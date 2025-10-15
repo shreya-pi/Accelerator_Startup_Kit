@@ -16,7 +16,7 @@ class ExtractProcedures:
         self.snowflake_config = config["SNOWFLAKE_CONFIG"]  
         
         # os.makedirs("./extracted_procedures", exist_ok=True)  # Ensure logs directory exists
-        output_dir = "./extracted_procedures"
+        output_dir = "./SP_Migration/extracted_procedures"
         self.output_dir = output_dir
         
         # 1. Ensure the output directory exists
