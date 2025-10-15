@@ -305,7 +305,7 @@ class HqlScriptsConverterApp:
         
                     status_placeholder.success("✅ Conversion complete! Review files in the 'Editor & Publisher' tab.")
                     log_info(f"\n--- PHASE 1 COMPLETE: {files_processed_successfully}/{len(files_to_process)} files converted. ---")
-                    results_expander.dataframe(pd.DataFrame(results), width='stretch')
+                    results_expander.dataframe(pd.DataFrame(results), use_container_width=True)
         
                     if files_processed_successfully > 0:
                         with st.spinner("Publishing all converted files to GitHub..."):
