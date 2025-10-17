@@ -67,19 +67,90 @@ class HqlScriptsConverterApp:
             prefix_to_strip = f"{repo_name}/branches/{branch}/"
             return [row[0].replace(prefix_to_strip, "", 1) for row in cur]
 
-    @staticmethod
-    @st.cache_data
+
     def read_file_from_snowflake_git_repo(_conn, repo_name, file_path, branch):
+         
+        safe_repo_name = (repo_name or "").strip().lstrip("@")  
+        safe_branch    = (branch or "").strip()
+        safe_file_path = (file_path or "").strip()
+        stage_file     = f"@{safe_repo_name}/branches/{safe_branch}/{safe_file_path}"
+ 
         with tempfile.TemporaryDirectory() as temp_dir:
-            local_path = Path(temp_dir).expanduser().resolve()
-            with _conn.cursor() as cur:
-                get_command = f"GET @{repo_name}/branches/{branch}/{file_path} file://{local_path.as_posix()};"
-                cur.execute(get_command)
-                result = cur.fetchone()
-                if not (result and result[0]):
-                    raise FileNotFoundError(f"File not found in Snowflake stage: {file_path}")
-                with open(local_path / result[0], "r", encoding="utf-8") as f:
-                    return f.read()
+            local_dir = Path(temp_dir).resolve()
+            file_url  = f"file://{local_dir.as_posix()}/"  
+ 
+           
+            list_sql = f"LIST @{safe_repo_name}/branches/{safe_branch}/;"
+            try:
+                print("[LIST] Executing:", list_sql)
+                with _conn.cursor() as cur:
+                    cur.execute(list_sql)
+                    rows = cur.fetchall() or []
+                
+                first_five = [r[0] for r in rows[:5]]
+                print(f"[LIST] {len(rows)} entries under branch. Sample:", first_five)
+            except Exception as e:
+                raise RuntimeError(f"LIST failed for {safe_repo_name}/branches/{safe_branch}: {e}") from e
+ 
+            
+            expected_suffix = f"{safe_repo_name}/branches/{safe_branch}/{safe_file_path}"
+            if not any(str(r[0]).endswith(safe_file_path) or str(r[0]) == expected_suffix for r in rows):
+                raise FileNotFoundError(
+                    f"File not found by LIST: {stage_file}\n"
+                    f"Tip: check repo/branch/file spelling from LIST output above."
+                )           
+            get_sql = f"GET {stage_file} '{file_url}'"
+            try:
+                print("[GET] Executing:", get_sql)
+                with _conn.cursor() as cur:
+                    cur.execute(get_sql)
+                print("[GET] Completed.")
+            except Exception as e:
+                raise RuntimeError(f"GET failed: {get_sql}\nError: {e}") from e
+ 
+            
+            target_name = Path(safe_file_path).name
+            matches = list(local_dir.rglob(target_name))
+            print(f"[SCAN] Looking for {target_name} in {local_dir} → found {len(matches)}")
+            if not matches:
+                
+                sample_tree = [str(p) for p in local_dir.rglob("*")][:20]
+                raise FileNotFoundError(
+                    f"Downloaded file not found under {local_dir} (looked for {target_name}).\n"
+                    f"Sample of temp tree:\n" + "\n".join(sample_tree)
+                )
+ 
+            downloaded_path = matches[0]
+            try:
+                data = downloaded_path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                data = downloaded_path.read_text(encoding="utf-8", errors="replace")
+ 
+            return data
+
+    # @staticmethod
+    # @st.cache_data
+    # def read_file_from_snowflake_git_repo(_conn, repo_name, file_path, branch):
+    #     with tempfile.TemporaryDirectory() as temp_dir:
+    #         # local_path = Path(temp_dir).expanduser().resolve()
+    #         local_path = Path(temp_dir).expanduser().resolve()
+    #         print(f"Temporary directory created at: {local_path}")
+    #         safe_local_path = local_path.as_posix().strip()
+    #         print(f"Safe local path: {safe_local_path}")
+    #         safe_repo_name = repo_name.strip()
+    #         safe_branch = branch.strip()
+    #         safe_file_path = file_path.strip()
+    #         print(f"Fetching file from Snowflake stage: @{safe_repo_name}/branches/{safe_branch}/{safe_file_path}")
+
+    #         with _conn.cursor() as cur:
+    #             get_command = f"GET @{repo_name}/branches/{branch}/{file_path} file://{local_path.as_posix()};"
+    #             cur.execute(get_command)
+    #             print(f"Executing GET command: {get_command}")
+    #             result = cur.fetchone()
+    #             if not (result and result[0]):
+    #                 raise FileNotFoundError(f"File not found in Snowflake stage: {file_path}")
+    #             with open(local_path / result[0], "r", encoding="utf-8") as f:
+    #                 return f.read()
 
     @staticmethod
     def generate_response_with_cortex(conn, file_content, question, model_name):
@@ -94,7 +165,7 @@ class HqlScriptsConverterApp:
 
 
     class GitPublisher:
-        def __init__(self, repo_path, remote_url, branch_name, status_callback):
+        def __init__(self, repo_path, remote_url, branch_name, status_callback):    
             self.repo_path = repo_path
             self.remote_url = remote_url
             self.branch_name = branch_name
@@ -392,11 +463,11 @@ class HqlScriptsConverterApp:
                     btn_cols = st.columns(2)
                     with btn_cols[0]:
                         if not st.session_state.edit_mode:
-                            if st.button("✏️ Edit Script", width='stretch'):
+                            if st.button("✏️ Edit Script", use_container_width=True):
                                 st.session_state.edit_mode = True
                                 st.rerun()
                         else: # Show Save button in the same spot
-                            if st.button("💾 Save Changes", width='stretch', type="primary"):
+                            if st.button("💾 Save Changes", use_container_width=True, type="primary"):
                                 new_content = st.session_state.editor_content
                                 Path(st.session_state.current_file_path).write_text(new_content, encoding='utf-8')
                                 st.session_state.converted_content = new_content
@@ -406,7 +477,7 @@ class HqlScriptsConverterApp:
         
                     with btn_cols[1]:
                         if not st.session_state.edit_mode:
-                             if st.button("🚀 Publish This File", width='stretch'):
+                             if st.button("🚀 Publish This File", use_container_width=True):
                                 with st.spinner("Publishing changes for this file..."):
                                     log_placeholder = st.expander("Publisher Log", expanded=True)
                                     log_messages = []
