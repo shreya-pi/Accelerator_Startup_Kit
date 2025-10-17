@@ -130,26 +130,29 @@ class TeradataMigrationApp:
             log_stream.write(f"[{table_name}] Snowflake connection closed.\n")
   
 
-    def run(self):
+    def run(self, config:dict):
         st.sidebar.header("Configuration & Control")
         
         with st.sidebar:
             st.subheader("1. Load Configuration")
-            uploaded_file = st.file_uploader("Upload your config.ini file", type=['ini'])
-            if uploaded_file is not None:
-                try:
-                    string_data = uploaded_file.getvalue().decode("utf-8")
-                    config = configparser.ConfigParser()
-                    config.read_string(string_data)
-                    if 'TERADATA' in config and 'SNOWFLAKE' in config and 'AZURE' in config:
-                        st.session_state.config = config
-                        st.success("Configuration loaded successfully!")
-                    else:
-                        st.error("Invalid config file. Ensure [TERADATA], [SNOWFLAKE], and [AZURE] sections exist.")
-                        st.session_state.config = None
-                except Exception as e:
-                    st.error(f"Failed to parse config file: {e}")
-                    st.session_state.config = None
+            # uploaded_file = st.file_uploader("Upload your config.ini file", type=['ini'])
+            # if config is not None:
+            #     try:
+            #         # string_data = uploaded_file.getvalue().decode("utf-8")
+            #         # config = configparser.ConfigParser()
+            #         # config.read_string(string_data)
+            #         if 'TERADATA' in config and 'SNOWFLAKE' in config and 'AZURE' in config:
+            #             st.session_state.config = config
+            #             st.success("Configuration loaded successfully!")
+            #         else:
+            #             st.error("Invalid config file. Ensure [TERADATA], [SNOWFLAKE], and [AZURE] sections exist.")
+            #             st.session_state.config = None
+            #     except Exception as e:
+            #         st.error(f"Failed to parse config file: {e}")
+            #         st.session_state.config = None
+
+
+        st.session_state.config = config
         
         if st.session_state.config:
             config = st.session_state.config

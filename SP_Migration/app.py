@@ -167,7 +167,7 @@ class SPMigrationApp:
         except Exception as e:
             return False, f"An error occurred: {e}"
 
-    def run(self):
+    def run(self, config:dict):
 
 
 
@@ -212,7 +212,7 @@ class SPMigrationApp:
                 # st.sidebar.write(f'Welcome *{name}*')
                 # authenticator.logout('Logout', 'sidebar')        
                 # Add a visual separator below the header
-                st.markdown("---")
+                # st.markdown("---")
                 # --- Main Application Logic ---        
         
         # st.set_page_config(
@@ -250,28 +250,29 @@ class SPMigrationApp:
                     active_key = st.session_state.active_component
                     if active_key == "create_metadata":
                         with st.container(border=True):
-                            st.subheader("Configuration")
-                            st.markdown("Upload your `config.py` file to provide the database connection details for the application.")
-                            with st.expander("View Sample `config.py` Template"):
-                                with open('SP_Migration/assets/config_template.py', 'r') as file:
-                                    config_template = file.read()
-                                st.code(config_template, language='python')
-                            uploaded = st.file_uploader(label="Upload `config.py`", type=["py"], label_visibility="collapsed")
-                            if uploaded:
-                                try:
-                                    raw_bytes = uploaded.read()
-                                    config_code = raw_bytes.decode("utf-8")
-                                    ns = {}
-                                    exec(config_code, {}, ns)
-                                    st.session_state.app_config = {
-                                        "SNOWFLAKE_CONFIG": ns["SNOWFLAKE_CONFIG"],
-                                        "SQL_SERVER_CONFIG": ns["SQL_SERVER_CONFIG"]
-                                    }
-                                    st.success("Config loaded successfully. You can now run the initialization.")
-                                except Exception as e:
-                                    st.error(f"Failed to parse config: {e}")
-                                    st.session_state.app_config = None
-                            st.markdown("---")
+                            # st.subheader("Configuration")
+                            # st.markdown("Upload your `config.py` file to provide the database connection details for the application.")
+                            # with st.expander("View Sample `config.py` Template"):
+                            #     with open('SP_Migration/assets/config_template.py', 'r') as file:
+                            #         config_template = file.read()
+                            #     st.code(config_template, language='python')
+                            # uploaded = st.file_uploader(label="Upload `config.py`", type=["py"], label_visibility="collapsed")
+                            # if uploaded:
+                            #     try:
+                            #         raw_bytes = uploaded.read()
+                            #         config_code = raw_bytes.decode("utf-8")
+                            #         ns = {}
+                            #         exec(config_code, {}, ns)
+                            #         st.session_state.app_config = {
+                            #             "SNOWFLAKE_CONFIG": ns["SNOWFLAKE_CONFIG"],
+                            #             "SQL_SERVER_CONFIG": ns["SQL_SERVER_CONFIG"]
+                            #         }
+                            #         st.success("Config loaded successfully. You can now run the initialization.")
+                            #     except Exception as e:
+                            #         st.error(f"Failed to parse config: {e}")
+                            #         st.session_state.app_config = None
+                            # st.markdown("---")
+                            st.session_state.app_config = config
                             if st.session_state.app_config:
                                 st.markdown("---")
                                 try:
